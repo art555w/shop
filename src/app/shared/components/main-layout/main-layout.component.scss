@@ -1,0 +1,45 @@
+.header {
+  padding: 5px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  mat-icon {
+    font-size: 35px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.header__logo{
+  max-width: 180px;
+  margin-left: 50px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.header__user {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.header__cart {
+  margin-right: 20px;
+}
+
+
+
+.footer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+

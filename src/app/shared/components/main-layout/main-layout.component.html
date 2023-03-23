@@ -1,2 +1,31 @@
-<p>main-layout works!</p>
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="./assets/log.png" alt="">
+          </div>
+          <div class="header__user">
+            <a href="#">
+              <mat-icon>person</mat-icon>
+            </a>
+            <span></span>
+          </div>
+          <div class="header__cart">
+            <a href="#">
+              <mat-icon>shopping_basket</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <div class="footer">
+    <span>© Суши Мастер. Все права защищены</span>
+  </div>
+</div>
+

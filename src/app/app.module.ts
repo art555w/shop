@@ -7,6 +7,9 @@ import {MainLayoutComponent} from './shared/components/main-layout/main-layout.c
 import {ProductComponent} from './shared/components/product/product.component';
 import {HomePageComponent} from './home-page/home-page.component';
 import {ProductPageComponent} from './product-page/product-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import {ProductPageComponent} from './product-page/product-page.component';
     ProductComponent,
     HomePageComponent,
     ProductPageComponent,
+    MenuPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
