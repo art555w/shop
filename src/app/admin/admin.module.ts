@@ -7,6 +7,12 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CreatePageComponent } from './create-page/create-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
+import {SharedModule} from "../shared/shared.module";
+import {ReactiveFormsModule} from "@angular/forms";
+import {QuillEditorComponent} from "ngx-quill";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 
 @NgModule({
@@ -19,7 +25,13 @@ import { EditPageComponent } from './edit-page/edit-page.component';
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    SharedModule,
+    ReactiveFormsModule,
+    QuillEditorComponent,
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule,
   ]
 })
 export class AdminModule { }

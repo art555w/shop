@@ -1,0 +1,41 @@
+.create__form {
+  max-width: 900px;
+  .mat-mdc-form-field {
+    display: block;
+  }
+  section {
+    p {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
+
+.form-image {
+  quill-editor {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .ql-toolbar.ql-snow .ql-formats {
+    display: block;
+  }
+  .ql-snow.ql-toolbar button {
+    width: 100%;
+  }
+}
+
+.create__inner {
+  h2 {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+

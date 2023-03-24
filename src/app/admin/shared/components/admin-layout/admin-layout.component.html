@@ -1,2 +1,43 @@
-<p>admin-layout works!</p>
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo" routerLink="/">
+            <img src="./assets/log.png" alt="">
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a [routerLink]="['/admin', 'create']" routerLinkActive="active">Создать</a>
+              </li>
+              <li>
+                <a [routerLink]="['/admin', 'dashboard']" routerLinkActive="active">Главная</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user" *ngIf="authService.inAuthenticated()">
+            <button
+              class="btn btn-danger"
+              type="button"
+              (click)="logout()"
+            >
+              Выйти
+            </button>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <span>© Суши Сет. Все права защищены</span>
+    </div>
+  </div>
+</div>
+
+

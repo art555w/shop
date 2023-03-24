@@ -7,9 +7,11 @@ import {MainLayoutComponent} from './shared/components/main-layout/main-layout.c
 import {ProductComponent} from './shared/components/product/product.component';
 import {HomePageComponent} from './home-page/home-page.component';
 import {ProductPageComponent} from './product-page/product-page.component';
-import { MenuPageComponent } from './menu-page/menu-page.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from "@angular/material/icon";
+import {MenuPageComponent} from './menu-page/menu-page.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SharedModule} from "./shared/shared.module";
+import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {MatIconModule} from "@angular/material/icon";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
+    SharedModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
